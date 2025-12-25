@@ -1,4 +1,4 @@
-import obs.Observale;
+import obs.Observable;
 import obs.Observer;
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
         // Using anonymous class for the third observer
         observable.subscribe(new Observer() {
             @Override
-            public void update(Observale o) {
+            public void update(Observable o) {
                 if (o instanceof ObservaleImpl1 obs) {
                 System.out.println("-------------obs impl 3-----------");
                 System.out.println("res= "+obs.getState()*Math.cos(obs.getState()));

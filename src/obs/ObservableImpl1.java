@@ -3,7 +3,7 @@ package obs;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObservaleImpl1 implements Observale {
+public class ObservableImpl1 implements Observable {
     private List<Observer> observers=new ArrayList<>();
 
     private int state;
